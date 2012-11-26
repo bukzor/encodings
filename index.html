@@ -1,0 +1,13 @@
+
+<html>
+<head>
+	<meta charset="cp1252">
+</head>
+<body>
+	Raw byte 0x81: <div id="byte81"></div>
+	Escaped (via js): <div id="output"></div>
+	<script>
+		document.getElementById('output').innerText = escape(document.getElementById('byte81').innerHTML);
+	</script>
+</body>
+</html>
