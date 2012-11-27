@@ -10,6 +10,25 @@
 	<dt>Raw byte 0x81: <dd><span id="byte81">Å</span>
 	<dt>Decoded and escaped: <dd><span id="escaped81"></span>
 </dl>
+<hr>
+<h2> Cross-browser Behavior: </h2>
+In summary, all browsers decode 0x81 to U+81 under cp1252, except Opera before version 12.
+Starting at version 12, Opera is consistent with all other browsers.
+<h3>Chrome 14</h3> <img src="img/cp1252/chrome14.png">
+<h3>Chrome 24</h3> <img src="img/cp1252/chrome24.png">
+<h3>Firefox 3</h3> <img src="img/cp1252/ff3.png">
+<h3>Firefox 4</h3> <img src="img/cp1252/ff4.png">
+<h3>Firefox 17</h3> <img src="img/cp1252/ff17.png">
+<h3>Internet Explorer 6</h3> <img src="img/cp1252/ie6.png">
+<h3>Internet Explorer 7</h3> <img src="img/cp1252/ie7.png">
+<h3>Internet Explorer 8</h3> <img src="img/cp1252/ie8.png">
+<h3>Opera 10</h3> <img src="img/cp1252/opera10.png">
+<h3>Opera 11.6</h3> <img src="img/cp1252/opera11.6.png">
+<h3>Opera 12.11</h3> <img src="img/cp1252/opera12.11.png">
+<h3>Safari 4</h3> <img src="img/cp1252/safari4.png">
+<h3>Safari 5.1</h3> <img src="img/cp1252/safari5.1.png">
+	
+
 <script>
 	document.getElementById('charset').innerHTML = document.characterSet;
 	document.getElementById('escaped80').innerHTML = escape(document.getElementById('byte80').innerHTML);
