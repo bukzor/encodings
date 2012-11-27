@@ -1,0 +1,19 @@
+<html>
+<head>
+	<meta charset="cp1252">
+</head>
+<body>
+<dl>
+	<dt>Charset: <dd><span id="charset"></span>
+	<dt>Raw byte 0x80: <dd><span id="byte80">€</span>
+	<dt>Decoded and escaped: <dd><span id="escaped80"></span>
+	<dt>Raw byte 0x81: <dd><span id="byte81"></span>
+	<dt>Decoded and escaped: <dd><span id="escaped81"></span>
+</dl>
+<script>
+	document.getElementById('charset').innerHTML = document.charset;
+	document.getElementById('escaped80').innerHTML = escape(document.getElementById('byte80').innerHTML);
+	document.getElementById('escaped81').innerHTML = escape(document.getElementById('byte81').innerHTML);
+</script>
+</body>
+</html>
